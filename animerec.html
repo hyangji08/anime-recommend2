@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./polio2.css"></link>
+</head>
+<body>
+    <div class="container">
+        <h1>어떤 장르를 좋아하시나요?</h1>
+        <form id="genreForm">
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="genre" value="러브코미디"> 러브코미디
+                </label><br>
+                <label>
+                    <input type="radio" name="genre" value="코미디"> 코미디
+                </label><br>
+                <label>
+                    <input type="radio" name="genre" value="판타지"> 판타지
+                </label><br>
+                
+            </div>
+            <button type="button" class="next-btn" onclick="showRecommendation()">다음</button>
+        </form>
+
+        <div id="recommendation" class="hidden">
+            <h2>추천 애니</h2>
+            <img id="animeImage" src="" alt="애니 이미지">
+            <p id="animeDescription"></p>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="polio.js"></script>
+</html>
